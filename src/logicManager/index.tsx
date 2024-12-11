@@ -16,7 +16,7 @@ class LogicManagerClass {
 
 const InitializeBlockArray = () => {
 
-    const blockCount = 81;
+   
     const blockArray : GameBlock[] = new Array();
 
     for(let col = 0; col < 9; col++){
