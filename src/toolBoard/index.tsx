@@ -1,13 +1,11 @@
 import SudokuManager from "../logicManager";
-import useGameStore from "../store";
-
 
 const ToolBoard = () => {
 
     const TOOLBOARD_WIDTH = 150;
     const TOOLBOARD_HEIGHT = 600;
 
-    const blockArray = useGameStore((state) => state.blockArray); 
+   // const blockArray = useGameStore((state) => state.blockArray); 
 
     return (
       <>
@@ -19,12 +17,14 @@ const ToolBoard = () => {
             borderStyle : 'groove' 
         }}>
           <button onClick={() => {
-            SudokuManager.integrityCheck();
+            SudokuManager.problemCheck();
           }}>검증하기</button>
         </div>
       </>
     )
   }
   
+
+
 export default ToolBoard;
   

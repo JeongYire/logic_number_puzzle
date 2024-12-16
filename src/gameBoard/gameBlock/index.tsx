@@ -54,6 +54,10 @@ const GameBlock = (props : {id : number,col : number,row : number,value : number
                     style={{
                       width:'calc(100% - 10px)',
                       height:'calc(100% - 10px)',
+                      fontSize : '3em',
+                      textAlign : 'center',
+                      justifyContent:'center',
+                      display:'flex',
                     }}
 
                     onChange={(e) => {
