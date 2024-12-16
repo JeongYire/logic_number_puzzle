@@ -1,4 +1,4 @@
-import LogicManager from "../logicManager";
+import SudokuManager from "../logicManager";
 import useGameStore from "../store";
 
 
@@ -19,7 +19,7 @@ const ToolBoard = () => {
             borderStyle : 'groove' 
         }}>
           <button onClick={() => {
-            LogicManager.problemCheck(blockArray);
+            SudokuManager.integrityCheck();
           }}>검증하기</button>
         </div>
       </>

@@ -8,8 +8,8 @@ type GameStorage = {
     setGameBlock : (id : number,value : number) => void,
 }
 
-const useGameStore = create<GameStorage>((set,get) => ({
-    blockArray : LogicManager.initializeBlockArray(),
+const useGameStore = create<GameStorage>((_set,get) => ({
+    blockArray : LogicManager.blockArray,
     setBlockArray : () => {
 
      
@@ -26,9 +26,7 @@ const useGameStore = create<GameStorage>((set,get) => ({
 
         getState.blockArray[findIndex].value = value;
 
-        set(({
-            blockArray : getState.blockArray,
-        }))
+      
 
     }
 }))

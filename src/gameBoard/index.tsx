@@ -22,7 +22,7 @@ const GameBoard = () => {
         }}>
           {
             blockArray.map(obj => {
-              return  <GameBlock key={'block_' + obj.id} id={obj.id} col={obj.col} row={obj.row} value={obj.value} guessValue={obj.guessValue}/>
+              return  <GameBlock key={'block_' + obj.id} id={obj.id} col={obj.col} row={obj.row} value={obj.value} isDetect={obj.isDetect}/>
             })
           }
         </div>

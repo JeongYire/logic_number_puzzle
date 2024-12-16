@@ -3,7 +3,7 @@ type GameBlock = {
     col : number,
     row : number,
     value : number,
-    guessValue : number,
+    isDetect : boolean,
     blockAddress : number,
 }
 
